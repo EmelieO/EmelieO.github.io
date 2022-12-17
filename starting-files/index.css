@@ -1,0 +1,315 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-size: 13px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .column {
+    float: left;
+    box-sizing: border-box;
+  }
+
+  .left {
+    width: 100%;
+    background-color: rgb(234, 146, 130);
+  }
+
+  form {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  form input[type="text"] {
+    width: 20%;
+    padding: 5px;
+    margin: 5px 0;
+    border: 1px solid rgb(213, 28, 28);
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  form label {
+    padding: 0;
+    margin-left: 0;
+    align-self: center;
+    margin-right: 0;
+    padding-right: 0;
+    font-size: larger;
+  }
+  
+  form input[type="checkbox"] {
+    width: 5%;
+    padding: 5px 0;
+    margin-left: 15px;
+    align-self: center;
+  }
+  
+  form input[type="submit"],
+  
+  form input[type="reset"] {
+    width: 20%;
+    background-color: rgb(228, 66, 66);
+    padding: 5px 5px;
+    margin: 5px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  form input[type="submit"]:hover {
+    background-color: #bebfdf;
+  }
+  
+  .right {
+    width: 100%;
+    height: 100vh;
+    overflow-y: scroll;
+    border: 1px solid rgb(11, 11, 11);
+    border-radius: 4px;
+    color: rgb(14, 13, 13);
+    font-weight: bold;
+    background-color:whitesmoke;
+  }
+  
+  .table-container {
+    margin: auto;
+    max-width: 1200px;
+    min-height: 100vh;
+    overflow: scroll;
+    width: 100%;
+  }
+  
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  thead tr {
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    height: 1px;
+  }
+  
+  th {
+    font-weight: bold;
+    height: inherit;
+    padding: 0;
+  }
+  
+  th:not(:first-of-type) {
+    border-left: 1px solid #ddd;
+  }
+  
+  th button {
+    background-color: rgb(19, 11, 239);
+    border: none;
+    cursor: pointer;
+    display: block;
+    font: inherit;
+    height: 100%;
+    margin: 0;
+    min-width: max-content;
+    padding: 0.5rem 1rem;
+    position: relative;
+    text-align: left;
+    width: 100%;
+  }
+  
+  tbody tr {
+    border-bottom: 1px solid #ddd;
+  }
+  
+  td {
+    padding: 0.5rem 1rem;
+    text-align: left;
+  }
+  
+  .nav {
+    background-color: rgb(228, 66, 66);
+    height: 50px;
+    padding: 0 1rem;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: auto;
+  }
+  
+  .headerName {
+    color: rgb(17, 16, 16);
+    font-size: 22px;
+    font-weight: bold;
+    margin: auto;
+    text-align: center;
+  }
+  
+  header{
+    background-color: rgb(228, 66, 66);
+    text-align: center;
+  }
+  
+  .custom-btn {
+    border: 3px solid rgb(128, 0, 0);
+    border-radius: 500px;
+    cursor: pointer;
+    background-color: rgb(228, 66, 66);
+    padding: 5px 10px;
+    margin: 0 50px;
+    color: black;
+    font-size: x-large;
+  }
+  
+  .custom-btn:hover {
+    background-color: #ddd;
+    transition: 0.3s;
+  }
+  
+  .custom-btn:focus{
+    background-color: black;
+    color: white;
+  }
+  
+  #closeView:focus{
+    background-color: rgb(228, 66, 66);
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+
+  a:hover {
+    color: rgb(6, 14, 120);
+    transition: 0.5s;
+    text-decoration: underline;
+  }
+  .searchView, .SearchBrowse {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 95%;
+    position: relative;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  
+  button {
+    background-color: white;
+    padding: 5px 5px;
+    margin: 5px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .th-header {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+    padding: 1rem;
+  }
+  
+  .songDetails {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+    padding: 1rem;
+    font-size: larger;
+  }
+  
+  .song-info {
+    width: 30%;
+    margin: auto;
+  }
+  
+  .song-radar {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+    margin: 10px 0;
+    padding: 0.1rem 0.6rem;
+  }
+  
+  #chart {
+    width: 500px;
+    height: 500px;
+    margin: auto;
+    padding: 1rem;
+  }
+  
+  .credits {
+    display: flex;
+    position: absolute;
+    right: 5%;
+    width: 20%;
+  }
+  
+  .cont {
+    display: flex;
+    position: absolute;
+    background-color: white;
+    top: 30px;
+    left: 5px;
+    z-index: 1;
+    display: none;
+  }
+  
+  .cont ul {
+    list-style: none;
+    margin: 0;
+    padding: 10px;
+  }
+  
+  #closeView {
+    display: none;
+  }
+  
+  .playlistSummary {
+    display: none;
+  }
+  
+  .summary, .summaryInfo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    padding-right: 20px;
+    background-color: rgb(228, 66, 66);
+    font-size: larger;
+  }
+  
+  .Names {
+    margin-left: 40%;
+    margin-right:40%;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: 450px 1000px;
+  }
