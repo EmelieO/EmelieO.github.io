@@ -1,6 +1,7 @@
 
 /* url of song api --- https versions hopefully a little later this semester */	
-const api = 'http://www.randyconnolly.com/funwebdev/3rd/api/music/songs-nested.php';
+//const api = 'http://www.randyconnolly.com/funwebdev/3rd/api/music/songs-nested.php';
+const api = "https://www.randyconnolly.com/funwebdev/3rd/api/music/songs-nested.php";
 
  
 /* note: you may get a CORS error if you try fetching this locally (i.e., directly from a
@@ -897,4 +898,4 @@ async function getapi(api) {
 
 }
 
-//export { getapi, api };
+export { getapi, api };
