@@ -1,6 +1,5 @@
 
 /* url of song api --- https versions hopefully a little later this semester */	
-//const api = 'http://www.randyconnolly.com/funwebdev/3rd/api/music/songs-nested.php';
 const api = "https://www.randyconnolly.com/funwebdev/3rd/api/music/songs-nested.php";
 
  
@@ -868,34 +867,34 @@ document.addEventListener("DOMContentLoaded", () => {
    });
 });
 
-async function getapi(api) {
-   const genreList = [];
-   const artistList = [];
-   const songList = [];
+// async function getapi(api) {
+//    const genreList = [];
+//    const artistList = [];
+//    const songList = [];
 
-   const response = await fetch(api);
-   const data = await response.json();
-   const songtp = JSON.stringify(data);
+//    const response = await fetch(api);
+//    const data = await response.json();
+//    const songtp = JSON.stringify(data);
 
-   const allSongs = JSON.parse(songtp);
+//    const allSongs = JSON.parse(songtp);
 
-   for (let i = 0; i < allSongs.length; i++) {
-      const temporgenre = allSongs[i]["genre"];
-      genreList.push(temporgenre);
-   }
+//    for (let i = 0; i < allSongs.length; i++) {
+//       const temporgenre = allSongs[i]["genre"];
+//       genreList.push(temporgenre);
+//    }
 
-   for (let i = 0; i < allSongs.length; i++) {
-      const temporartist = allSongs[i]["artist"];
-      artistList.push(temporartist);
-   }
+//    for (let i = 0; i < allSongs.length; i++) {
+//       const temporartist = allSongs[i]["artist"];
+//       artistList.push(temporartist);
+//    }
 
-   for (let i = 0; i < allSongs.length; i++) {
-         const temporsong = allSongs[i];
-         songList.push(temporsong);
-   }
+//    for (let i = 0; i < allSongs.length; i++) {
+//          const temporsong = allSongs[i];
+//          songList.push(temporsong);
+//    }
 
-   return [ genreList, artistList, songList ];
+//    return [ genreList, artistList, songList ];
 
-}
+// }
 
-export { getapi, api };
+// export { getapi, api };
